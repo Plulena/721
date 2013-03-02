@@ -13,7 +13,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        
+
         <activity android:name="Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,9 +21,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.pitapat.a721.MainActivity" android:label="@string/app_name"></activity>
+        <activity android:name="MainActivity" android:label="@string/app_name"></activity>
         <activity android:name="History"></activity>
         <activity android:name="Settings"></activity>
+        <provider android:name="a721Provider" android:authorities="com.pitapat.a721.provider.a721"></provider>
     </application>
 
 </manifest>
